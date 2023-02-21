@@ -7,12 +7,13 @@ import Forgetpassword from "./pages/Forgetpassword";
 import Resetpassword from "./pages/Resetpassword";
 import MainLayout from './components/MainLayout';
 
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Login/>}/>
+          <Route path="/login" element={<Login/>}/>
           <Route path="/admin" element={<MainLayout/>}/>
           <Route path="/forgetpassword" element={<Forgetpassword/>}/>
           <Route path="/resetpassword" element={<Resetpassword/>}/>
