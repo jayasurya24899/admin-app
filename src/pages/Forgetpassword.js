@@ -4,7 +4,7 @@ import Custominput from '../components/Custominput'
 function Forgetpassword() {
   return (
     <div className='py-5' style={{ background:"#66a3ff", minHeight:"100vh"}}>
-      <br/>
+      <br/> 
       <br/>
       <br/>
       <div className='my-5 w-25 bg-white rounded-3 mx-auto p-3'>
