@@ -9,7 +9,7 @@ function Resetpassword() {
       <br/>
       <div className='my-5 w-25 bg-white rounded-3 mx-auto p-4'>
         <h3 className='text-center'>Reset Password</h3>
-        <p>Please Enter your new password.</p>
+        <p><small>Please Enter your new password.</small></p>
         <Custominput type="text" id="pass" label="New-password"/>
         <Custominput type="text" id="confirmpass" label="Confirm-password"/>
         <button className='border-0 px-3 py-2 text-white fw-bold w-100'

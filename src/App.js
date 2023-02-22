@@ -5,7 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Login  from "./pages/Login";
 import Forgetpassword from "./pages/Forgetpassword";
 import Resetpassword from "./pages/Resetpassword";
-import MainLayout from './components/MainLayout';
+import MainLayout from './components/MainLayout/MainLayout.js';
 
 
 function App() {

@@ -9,12 +9,12 @@ function Forgetpassword() {
       <br/>
       <div className='my-5 w-25 bg-white rounded-3 mx-auto p-3'>
         <h3 className='text-center '>Forgot Password</h3>
-        <p className='fs-6'>Please Enter Your register email to get reset password mail.</p>
+        <p className='fs-6'><small>Please Enter Your register email to get reset password mail.</small></p>
         <Custominput type="text" id="email" label="EMAIL-ADDRESS"/>
       
         <button className='border-0 px-3 py-2 text-white fw-bold w-100'
         style={{background:"#66a3ff"}}
-        type="submit">sent link
+        type="submit">Sent link
         </button>
 
       </div>
