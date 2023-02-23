@@ -157,7 +157,7 @@ const Dashboard = () => {
         <h3 className='mb-4'>Recent Orders</h3>
        <div>
        <Table 
-       columns={columns} dataSource={data1} 
+       columns={columns} dataSource={data1}  
        />
       </div>
       </div>
