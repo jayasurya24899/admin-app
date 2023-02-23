@@ -52,12 +52,21 @@
     line-height: 20px;
     
   }
+  .ant-layout-header div .badge{
+    top: 14px;
+    /* right: 2px; */
+  }
   .logo{
     background-color:#66a3ff;
     margin: 0;
     height: 64px;
   }
- .main{
-    overflow-y:scroll ;
+ main{
+    overflow-y:scroll;
+    height: 85vh;
+    background-color: transparent!important;
+  }
+  main::-webkit-scrollbar{
+    width: 0px;
   }
   

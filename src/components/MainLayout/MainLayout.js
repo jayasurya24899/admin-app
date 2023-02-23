@@ -14,7 +14,7 @@ import {FiUsers} from "react-icons/fi"
 import { MdProductionQuantityLimits, MdOutlineManageSearch } from "react-icons/md"
 import {VscFeedback} from "react-icons/vsc"
 import {CgNotifications} from "react-icons/cg"
-import {IoIosAddCircleOutline,} from "react-icons/io"
+import {IoIosAddCircleOutline, IoMdNotificationsOutline} from "react-icons/io"
 import {IoNewspaperOutline} from "react-icons/io5"
 import {RiAdminLine} from "react-icons/ri"
 import { BiEdit } from "react-icons/bi"
@@ -45,7 +45,7 @@ const MainLayout = () => {
           mode="inline"
           defaultSelectedKeys={['']}
           onClick={({key})=>{
-            if( key == "signout"){
+            if( key === "signout"){
               }else{
                 navigate(key)
               }
@@ -190,9 +190,10 @@ const MainLayout = () => {
             onClick: () => setCollapsed(!collapsed),
           })}
           <div className="d-flex gap-3 align-items-center">
-            <div></div>
+            <div className="position-relative"><IoMdNotificationsOutline className='fs-4'/></div>
+            <span className='badge bg-warning rounded-circle p-1 position-absolute'> 3 </span>
             <div className="d-flex gap-3 align-items-center">
-                <div><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dadmin&psig=AOvVaw1LOE6n1xiq5jrSe4m6GVM4&ust=1677141533546000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNjyxdncqP0CFQAAAAAdAAAAABAE" alt=''/></div>
+                <div><img width={40} height={40} src="https://t4.ftcdn.net/jpg/02/27/45/09/360_F_227450952_KQCMShHPOPebUXklULsKsROk5AvN6H1H.jpg" alt="Forest"/></div>
                 <div>
                     <h5 className='mb-0'>jayasurya</h5>
                     <p className='mb-0'>jsurya@gmail.com</p>
@@ -208,8 +209,9 @@ const MainLayout = () => {
             background: colorBgContainer,
           }}
         >
-            Content
+          <main>
           <Outlet/>
+          </main>
         </Content>
       </Layout>
     </Layout>
