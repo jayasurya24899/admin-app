@@ -58,17 +58,17 @@ const MainLayout = () => {
               label: 'Dashboard',
             },
             {
-                key: 'products',
+                key: 'product',
                 icon: <MdProductionQuantityLimits className='fs-4'/>,
-                label: 'Products',
+                label: 'Product',
                 children:[
                     {
-                        key: 'view-products',
+                        key: 'view-product',
                         icon: <AiOutlineEye className='fs-4'/>,
                         label: 'ViewProducts',
                       },
                       {
-                        key: 'add-products',
+                        key: 'add-product',
                         icon: <IoIosAddCircleOutline className='fs-4'/>,
                         label: 'Add-products',
                       },
