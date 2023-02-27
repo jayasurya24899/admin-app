@@ -1,5 +1,6 @@
 import React from 'react'
-import { Table } from 'antd';  
+import { Table } from 'antd'; 
+import "./Ordermanagement.css";
 
 const columns = [
     {
@@ -34,7 +35,7 @@ const columns = [
 const Viewordermanagement =() => {
   return (
     <div>
-    <h3 className='mb-4'>View OrderManagement</h3>
+    <h3 className='mb-4 title'>View OrderManagement</h3>
    
     <div>
         <Table columns={columns} datasource={data1}/>

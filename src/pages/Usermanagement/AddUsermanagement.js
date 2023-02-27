@@ -1,10 +1,11 @@
 import React from 'react'
 import Custominput from '../../components/Custominput'
+import "./Usermanagement.css"
 
 const AddUsermanagement = () => {
   return (
     <div>
-    <h3 className='mb-4'>Add User</h3>
+    <h3 className='mb-4 title'>Add User</h3>
     <div>
         <form action=''>
             <Custominput type="text" label="Enter Category"/>

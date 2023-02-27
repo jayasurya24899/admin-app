@@ -34,7 +34,7 @@ const Viewproduct =()=> {
     
   return (
     <div>
-        <h3 className='mb-4'>View Products</h3>
+        <h3 className='mb-4 title'>View Products</h3>
        
         <div>
             <Table columns={columns} datasource={data1} />

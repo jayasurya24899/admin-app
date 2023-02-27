@@ -1,5 +1,6 @@
 import React from 'react'
 import { Table } from 'antd';  
+import "./Usermanagement.css"
 
 const columns = [
     {
@@ -32,7 +33,7 @@ const columns = [
 const Viewusermanagement = () => {
     return (
         <div>
-            <h3 className='mb-4'>View UserManagement</h3>
+            <h3 className='mb-4 title'>View UserManagement</h3>
            
             <div>
                 <Table columns={columns} datasource={data1}/>

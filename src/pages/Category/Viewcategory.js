@@ -18,6 +18,7 @@ const columns = [
         title: 'Status',
         dataIndex: 'status',
       },
+      
   ];
   const data1 = [];
   for (let i = 0; i < 46; i++) {
@@ -34,11 +35,13 @@ const columns = [
 const Viewcategory = () => {
   return (
     <div>
-    <h3 className='mb-4'>View ProductsCategory</h3>
+    <h3 className='mb-4 title'>View ProductsCategory</h3>
    
     <div>
-        <Table columns={columns} datasource={data1}/>
+        <Table columns={columns} datasource={data1} />
+        
     </div>
+  
 </div>
   )
 }

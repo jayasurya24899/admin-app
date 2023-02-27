@@ -1,6 +1,27 @@
 .red{
     color: red;
+    font-size: 14px;
+    font-family: Roboto!important;
 }
 .green{
     color:green
+}
+.form-control{
+    box-shadow: none;
+    border-color: #c3d4da;
+}
+.title{
+    font-size: 28px;
+    font-family: Roboto!important;
+    color: #212529;
+}
+.sub-title{
+    font-size: 24px;
+    font-family: Roboto!important;
+    color: #212529;
+}
+.desc{
+    font-size:14px;
+    font-family: Roboto!important;
+    color:#828599
 }

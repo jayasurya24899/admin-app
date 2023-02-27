@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./MainLayout.css"
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -190,14 +190,35 @@ const MainLayout = () => {
             onClick: () => setCollapsed(!collapsed),
           })}
           <div className="d-flex gap-3 align-items-center">
-            <div className="position-relative"><IoMdNotificationsOutline className='fs-4'/></div>
-            <span className='badge bg-warning rounded-circle p-1 position-absolute'> 3 </span>
-            <div className="d-flex gap-3 align-items-center">
+            <div className="position-relative"><IoMdNotificationsOutline className='fs-4'/>
+            <span className='badge bg-warning rounded-circle p-1 position-absolute'> 3 </span></div>  
+            <div className="d-flex gap-3 align-items-center dropdown">
                 <div><img width={40} height={40} src="https://t4.ftcdn.net/jpg/02/27/45/09/360_F_227450952_KQCMShHPOPebUXklULsKsROk5AvN6H1H.jpg" alt="Forest"/></div>
-                <div>
+                <div  
+               role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     <h5 className='mb-0'>jayasurya</h5>
                     <p className='mb-0'>jsurya@gmail.com</p>
                 </div>
+                <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <Link
+                    className="dropdown-item py-1 mb-1"
+                    style={{ height: "auto", lineHeight: "20px" }}
+                    to="/"
+                  >
+                    View Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item py-1 mb-1"
+                    style={{ height: "auto", lineHeight: "20px" }}
+                    to="/"
+                  >
+                    Signout
+                  </Link>
+                </li>
+              </div>
             </div>
 
           </div>
@@ -209,9 +230,9 @@ const MainLayout = () => {
             background: colorBgContainer,
           }}
         >
-          <main>
+          
           <Outlet/>
-          </main>
+          
         </Content>
       </Layout>
     </Layout>

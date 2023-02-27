@@ -34,7 +34,7 @@ const columns = [
 const Viewnotificationmanagement = () => {
   return (
     <div>
-    <h3 className='mb-4'>View NotificationManagement</h3>
+    <h3 className='mb-4 title'>View NotificationManagement</h3>
    
     <div>
         <Table columns={columns} datasource={data1}/>

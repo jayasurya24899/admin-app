@@ -5,7 +5,7 @@ import "./NotificationManagement.css";
 const AddNotificationmanagement = ()=> {
   return (
     <div>
-    <h3 className='mb-4'>Add Notification</h3>
+    <h3 className='mb-4 title'>Add Notification</h3>
     <div>
         <form action=''>
             <Custominput type="text" label="Enter Name"/>
