@@ -34,7 +34,7 @@ const MainLayout = () => {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo">
-            <h2 className='text-white fs-5 tect-center py-3 mb-0'>
+            <h2 className='text-white d-flex justify-content-center fs-7  py-3  mb-0'>
                 <span className='sm-logo'>S</span>
                 <span className='lg-logo'>Shopify</span>
             </h2>
@@ -191,7 +191,7 @@ const MainLayout = () => {
           })}
           <div className="d-flex gap-3 align-items-center">
             <div className="position-relative"><IoMdNotificationsOutline className='fs-4'/>
-            <span className='badge bg-warning rounded-circle p-1 position-absolute'> 3 </span></div>  
+            <span className='badge bg-warning rounded-circle p-1 position-absolute'>3</span></div>  
             <div className="d-flex gap-3 align-items-center dropdown">
                 <div><img width={40} height={40} src="https://t4.ftcdn.net/jpg/02/27/45/09/360_F_227450952_KQCMShHPOPebUXklULsKsROk5AvN6H1H.jpg" alt="Forest"/></div>
                 <div  

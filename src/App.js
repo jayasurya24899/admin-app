@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Notfound from "./pages/Notfound/Notfound";
 import Dashboard from "./pages/Dashboard/Dashboard.js";
 import Login from "./pages/Login";
 import Resetpassword from "./pages/Resetpassword";
@@ -18,8 +19,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-       
+        <Route path="/login" element={<Login />} />
+       <Route path='*' element={<Notfound/>}/>
         <Route path="/reset-password" element={<Resetpassword />} />
         <Route path="/forgot-password" element={<Forgotpassword />} />
         <Route path="/admin" element={<MainLayout />}>

@@ -54,7 +54,7 @@
   }
   .ant-layout-header div .badge{
     top: 14px;
-    /* right: 2px; */
+    right: 2px;
   }
   .logo{
     background-color:#66a3ff;
@@ -67,6 +67,20 @@
     background-color: transparent!important;
   }
   main::-webkit-scrollbar{
-    width: 0px;
+    width: 10px;
+  }
+  /* main::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  } */
+   
+  /* Handle */
+  main::-webkit-scrollbar-thumb {
+    background: #B1AAAA;
+
+  }
+  
+  /* Handle on hover */
+  main::-webkit-scrollbar-thumb:hover {
+    background: #888; 
   }
   

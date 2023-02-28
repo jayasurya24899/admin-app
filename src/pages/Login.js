@@ -8,15 +8,15 @@ function Login() {
       <br/>
       <br/>
       <br/>
-      <div className='my-5 w-25 bg-white rounded-3 mx-auto p-4'>
-        <h3 className='text-center'>Login</h3>
+      <div className=' text-center my-5 w-25 bg-white rounded-3 mx-auto p-4'>
+        <h3>Login</h3>
         <p>Login to your account to continue.</p>
         <Custominput 
         type="text" 
         id="email"
         label="EMAIL-ADDRESSS"
          />
-        <Custominput type="text"
+        <Custominput type="password"
          id="pass"
          label="PASSWORD"
           />
