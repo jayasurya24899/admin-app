@@ -22,7 +22,7 @@ function Notfound() {
 		
 		<p>the page you are looking for not avaible!</p>
 		
-		<Link to='/admin'>Go to Home</Link>
+		<Link to='/admin'>Go to Home</Link> 
 	</div>
 		</div>
 		</div>
