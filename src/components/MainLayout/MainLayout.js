@@ -36,7 +36,7 @@ const MainLayout = () => {
         <div className="logo">
             <h2 className='text-white d-flex justify-content-center fs-7  py-3  mb-0'>
                 <span className='sm-logo'>S</span>
-                <span className='lg-logo'>Shopify</span>
+                <span className='lg-logo'>Shopio</span>
             </h2>
             </div>
 

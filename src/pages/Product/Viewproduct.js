@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Table } from 'antd';  
+import axios from "axios";
+import { axios_url } from '../Axios/Axios';
+import { getAdjustAppendPadding } from '@antv/g2plot/lib/utils';
+import Item from 'antd/es/list/Item';
 
-const columns = [
+
+
+
+
+
+const Viewproduct =()=> {
+    
+  const [data, setData] = useState([]);
+  const columns = [
     {
       title: 'S.No',
       dataIndex: 'key',
@@ -19,20 +31,22 @@ const columns = [
         dataIndex: 'status',
       },
   ];
-  const data1 = [];
-  for (let i = 0; i < 46; i++) {
-    data1.push({
-      key: i,
-      name: `Edward King ${i}`,
-      products: 32,
-      status: `London, Park Lane no. ${i}`,
-    });
-  }
-
-
-const Viewproduct =()=> {
+ 
+ const data1 = data.map((item, index)=>{
+    return
     
-  return (
+  });
+
+  const fetchdata = async() =>{
+    const response = await axios.get(axios_url)
+   setData(response.data)
+   console.log(response,"response");
+  }
+  useEffect (()=>{
+  fetchdata();
+  },[])
+
+   return (
     <div>
         <h3 className='mb-4 title'>View Products</h3>
        

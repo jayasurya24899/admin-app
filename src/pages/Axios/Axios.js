@@ -1,0 +1,1 @@
+export const axios_url ="https://63fed67ec5c800a7238685ab.mockapi.io/user/"
